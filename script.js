@@ -1,6 +1,6 @@
 //Tong 2 so
 function sum(numberOne , numberTwo) {
-    var result = numberOne + numberTwo
+    var result = numberOne + numberTwo;
     return result;
 }
 //Tong mang
