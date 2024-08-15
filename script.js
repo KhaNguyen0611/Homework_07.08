@@ -6,7 +6,7 @@ function sum(numberOne , numberTwo) {
 //Tong mang
 function sumArray(array) {
     var value = 0;
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         value = value + array[i];
     }
     return value;
@@ -15,12 +15,12 @@ function sumArray(array) {
 function findMinMax(array) {
     let min = array[0];
     let max = array[0];
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if(array[i] < min) {
             min = array[i];
         }
     }
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if(array[i] > max) {
             max = array[i];
         }
