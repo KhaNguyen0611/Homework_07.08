@@ -1,5 +1,5 @@
 //Tong 2 so
-function sum(numberOne , numberTwo) {
+function sumTwoDigits(numberOne , numberTwo) {
     var result = numberOne + numberTwo;
     return result;
 }
@@ -12,16 +12,16 @@ function sumArray(array) {
     return value;
 }
 //Tim min, max array
-function findMinMax(array) {
+function findMinMaxArray(array) {
     let min = array[0];
     let max = array[0];
     for (let i = 0; i < array.length; i++) {
-        if(array[i] < min) {
+        if (array[i] < min) {
             min = array[i];
         }
     }
     for (let i = 0; i < array.length; i++) {
-        if(array[i] > max) {
+        if (array[i] > max) {
             max = array[i];
         }
     }
@@ -29,7 +29,7 @@ function findMinMax(array) {
 }
 //Dem so ky tu trong chuoi
 const text = "Hello1"
-function countString(string) {
+function countStringArray(string) {
    const result = string.length;
    return result;
 }
