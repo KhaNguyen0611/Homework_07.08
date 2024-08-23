@@ -1,35 +1,40 @@
-//Tong 2 so
+//Sum two digits
 function sumTwoDigits(numberOne , numberTwo) {
-    var result = numberOne + numberTwo;
-    return result;
+    return numberOne + numberTwo;
 }
-//Tong mang
+//Sum digits in array
 function sumArray(array) {
-    var value = 0;
+    let value = 0;
     for (let i = 0; i < array.length; i++) {
-        value = value + array[i];
+        if (typeof(array[i]) === 'number') {
+        value += array[i];
+        }
+        else {
+            return 'noSum';
+        }
     }
     return value;
 }
-//Tim min, max array
+//Find min, max in array
 function findMinMaxArray(array) {
     let min = array[0];
     let max = array[0];
     for (let i = 0; i < array.length; i++) {
-        if (array[i] < min) {
-            min = array[i];
+        if (typeof(array[i]) === 'number') {
+            if (array[i] < min) {
+                min = array[i];
+            }
+            else if (array[i] > max) {
+                max = array[i];
+            }
+        else {
+            return 'notFind';
+        }
         }
     }
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > max) {
-            max = array[i];
-        }
-    }
-    return {min, max};
+    return [min, max];
 }
-//Dem so ky tu trong chuoi
-const text = "Hello1"
+//Count string in array
 function countStringArray(string) {
-   const result = string.length;
-   return result;
+    return string.length;
 }
