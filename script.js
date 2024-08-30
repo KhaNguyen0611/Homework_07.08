@@ -6,16 +6,16 @@ function sumTwoDigits(numberOne, numberTwo) {
   return numberOne + numberTwo;
 }
 //Sum digits in array
-function sumDigitsInArray(arr) {
-  if (!Array.isArray(arr)) {
+function sumDigitsInArray(array) {
+  if (!Array.isArray(array)) {
     return 0;
   }
   let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] !== "number" || !Array.isArray(arr)) {
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] !== "number" || !Array.isArray(array)) {
       return 0;
     } else {
-      total += arr[i];
+      total += array[i];
     }
   }
   return total;
